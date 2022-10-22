@@ -43,6 +43,15 @@ body {
 img {
   display: block;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 /*----------- Logo -------- */
 
@@ -107,6 +116,7 @@ img {
 }
 
 .link-contacts {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -144,7 +154,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-background);
-  margin-top: 0;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -198,7 +207,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-text);
-  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -208,8 +216,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-text-secohd);
-  margin: 0;
-
 }
 
 /* --------Work------- */
@@ -226,7 +232,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-text);
-  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -255,8 +260,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-text);
-  margin: 0;
   margin-bottom: 50px;
+}
+
+.team-card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-subject {
@@ -266,6 +275,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  margin-bottom: 10px;
 }
 
 .team-subtitle {
@@ -277,7 +287,6 @@ img {
 }
 
 /* -------Footer -------*/
-
 
 .footer {
   background-color: var(--second-background);
@@ -304,7 +313,6 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--address-color);
-
 }
 
 .address-list-item {
@@ -349,7 +357,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-text);
-  margin: 0;
+  margin-bottom: 4px;
 }
 
 .project-subtitle {
@@ -357,8 +365,6 @@ address {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--color-text-secohd);
-  margin: 0;
-  margin-top: 4px;
 }
 
 .project-list {
@@ -367,8 +373,8 @@ address {
   flex-basis: calc(100% / 3 - var(--project-list-gap));
   margin-left: calc(-1 * var(--project-list-gap));
   margin-top: calc(-1 * var(--project-list-gap));
-  
 }
+
 .project-list > .project {
   margin-top: var(--project-list-gap);
   margin-left: var(--project-list-gap);
@@ -377,5 +383,5 @@ address {
   padding: 20px 24px;
   border-right: 1px solid var(--boxes-color);
   border-bottom: 1px solid var(--boxes-color);
-  border-left:1px solid var(--boxes-color) ;
+  border-left: 1px solid var(--boxes-color);
 }
